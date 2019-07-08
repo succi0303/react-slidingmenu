@@ -1,0 +1,14 @@
+box: node:latest
+build:
+  steps:
+    - npm-install
+    - script:
+        name: build app
+        code: |
+          yarn build
+deploy:
+  steps:
+    - pheres/git-push@0.4.10:
+        gh_token: $GITHUB_TOKEN
+        gh_pages: true
+        basedir: build
