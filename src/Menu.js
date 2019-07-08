@@ -16,16 +16,16 @@ class Menu extends Component {
         className={visibility}
       >
         <h2>
-          <a href="#">Home</a>
+          <a href="#flyoutMenu">Home</a>
         </h2>
         <h2>
-          <a href="#">About</a>
+          <a href="#flyoutMenu">About</a>
         </h2>
         <h2>
-          <a href="#">Contact</a>
+          <a href="#flyoutMenu">Contact</a>
         </h2>
         <h2>
-          <a href="#">Search</a>
+          <a href="#flyoutMenu">Search</a>
         </h2>
       </div>
     );
